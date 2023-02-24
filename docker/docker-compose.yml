@@ -4,17 +4,17 @@ services:
   ms_tengine:
     image: modstart/tengine:1.0.0
     ports:
-      - "20080:80"
+      - "8080:80"
     volumes:
-      - "./docker_config/tengine.conf:/etc/nginx/nginx.conf"
-      - "./modstart:/data/website/modstart:rw"
+      - "./config/tengine.conf:/etc/nginx/nginx.conf"
+      - "./blog:/data/website/blog:rw"
     links:
       - ms_php56
 
   ms_php56:
     image: modstart/php56:1.0.0
     volumes:
-      - "./modstart:/data/website/modstart:rw"
+      - "./blog:/data/website/blog:rw"
     links:
       - ms_mysql
 
@@ -23,7 +23,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "123456"
     volumes:
-      - "./docker_config/mysql_init.sql:/docker-entrypoint-initdb.d/setup.sql"
+      - "./config/mysql_init.sql:/docker-entrypoint-initdb.d/setup.sql"
       - "./data/mysql:/var/lib/mysql"
     ports:
       - "23306:3306"
