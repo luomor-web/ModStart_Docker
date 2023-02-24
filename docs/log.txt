@@ -1,1 +1,11 @@
 sudo docker-compose up -d
+Creating docker_ms_mysql_1 ... done
+Creating docker_ms_php56_1 ... done
+Creating docker_ms_tengine_1 ... done
+
+sudo docker-compose ps
+       Name                      Command               State               Ports
+--------------------------------------------------------------------------------------------
+docker_ms_mysql_1     docker-entrypoint.sh mysqld      Up      0.0.0.0:23306->3306/tcp
+docker_ms_php56_1     docker-php-entrypoint /bin ...   Up      9000/tcp
+docker_ms_tengine_1   nginx -g daemon off;             Up      443/tcp, 0.0.0.0:8080->80/tcp

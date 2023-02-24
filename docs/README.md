@@ -1,6 +1,7 @@
 ```shell
 cd docker
 sudo docker-compose up -d
+sudo docker-compose ps
 ```
 
 ```shell
