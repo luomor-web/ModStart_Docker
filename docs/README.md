@@ -2,6 +2,12 @@
 cd docker
 sudo docker-compose up -d
 sudo docker-compose ps
+
+sudo docker exec -it docker_ms_tengine_1 bash
+ls /data/website/blog/
+
+sudo docker exec -it docker_ms_php56_1 bash
+cat /usr/local/etc/php-fpm.d/docker.conf
 ```
 
 ```shell
