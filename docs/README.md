@@ -14,6 +14,15 @@ chown -R www-data:www-data bootstrap/
 chown -R www-data:www-data storage/
 chown -R www-data:www-data public/
 chown -R www-data:www-data /data/website/blog/.env
+
+ms_mysql
+3306
+modstart
+root
+123456
+
+admin
+admin123
 ```
 
 ```shell
