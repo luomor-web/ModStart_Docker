@@ -25,6 +25,8 @@ root
 
 admin
 admin123
+
+https://developer.wordpress.org/rest-api/
 ```
 
 ```shell
