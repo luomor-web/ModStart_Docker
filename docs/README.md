@@ -13,6 +13,7 @@ http://82.157.51.152:8080/install.php
 chown -R www-data:www-data bootstrap/
 chown -R www-data:www-data storage/
 chown -R www-data:www-data public/
+chown -R www-data:www-data /data/website/blog/.env
 ```
 
 ```shell
