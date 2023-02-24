@@ -1,0 +1,1 @@
+*  *  *  *  *  www-data /usr/local/bin/php /data/website/xxx.com/artisan schedule:run > /tmp/xxx.com.log 2>&1
